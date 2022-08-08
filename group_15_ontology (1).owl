@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is about Ice Cream ordering system</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasFlavor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasFlavor">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasFlavor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasShape">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasShape"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasSize"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Size">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Ice_Cream"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Bubble_Gum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Bubble_Gum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Buckets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Buckets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Cakes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Cakes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Caramel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Caramel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Cones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Cones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Cookies_and_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Cookies_and_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Floats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Floats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#French_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#French_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Gluten-Free_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Gluten-Free_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Hard_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Hard_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Lactose-Free_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Lactose-Free_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Large -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Large">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Light_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Light_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Mint_and_Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Mint_and_Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#No_Sugar_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#No_Sugar_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Organic_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Organic_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Peppermint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Peppermint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Raspberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Raspberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Soft_Ice_Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Soft_Ice_Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Sticks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Sticks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Strawberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Flavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Sundae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Sundae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#X-Large -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#X-Large">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/6/untitled-ontology-3#Size"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
